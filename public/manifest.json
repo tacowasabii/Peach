@@ -1,0 +1,31 @@
+{
+  "name": "PEACH",
+  "description": "자폐 스펙트럼을 위한 웹 접근성 증진 프로그램입니다.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo-white.png",
+      "32": "logo-white.png",
+      "48": "logo-white.png",
+      "128": "logo-white.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "logo-white.png",
+    "32": "logo-white.png",
+    "48": "logo-white.png",
+    "128": "logo-white.png"
+  }
+}
