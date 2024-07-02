@@ -1,4 +1,6 @@
+import ApplyMaskButton from "./ApplyMaskButton";
 import ColorButton from "./ColorButton";
+import RemoveMaskButton from "./RemoveMaskButton";
 
 function App() {
   return (
@@ -9,12 +11,8 @@ function App() {
       <ColorButton backgroundColor="#e9efe8" textColor="#008d86" imageSrc="/color-4.png" />
       <ColorButton backgroundColor="#098668" textColor="#ecdacc" imageSrc="/color-5.png" />
       <ColorButton backgroundColor="#1C3C54" textColor="#C6CED4" imageSrc="/color-6.png" />
-      <button id="apply-mask" className="w-[55px]">
-        <img src="/Screen-mask-on.png" alt="Screen-mask-on button" />
-      </button>
-      <button id="remove-mask" className="w-[55px]">
-        <img src="/Screen-mask-off.png" alt="Screen-mask-off button" />
-      </button>
+      <ApplyMaskButton />
+      <RemoveMaskButton />
       <button id="change-font-button" className="w-[55px]">
         <img src="/Change-font.png" alt="Change-font button" />
       </button>
