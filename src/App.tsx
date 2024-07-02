@@ -1,24 +1,14 @@
+import ColorButton from "./ColorButton";
+
 function App() {
   return (
     <div className="w-[760px] h-10">
-      <button id="color-1" className="w-[55px]">
-        <img src="/color-1.png" alt="color-1 button" />
-      </button>
-      <button id="color-2" className="w-[55px]">
-        <img src="/color-2.png" alt="color-2 button" />
-      </button>
-      <button id="color-3" className="w-[55px]">
-        <img src="/color-3.png" alt="color-3 button" />
-      </button>
-      <button id="color-4" className="w-[55px]">
-        <img src="/color-4.png" alt="color-4 button" />
-      </button>
-      <button id="color-5" className="w-[55px]">
-        <img src="/color-5.png" alt="color-5 button" />
-      </button>
-      <button id="color-6" className="w-[55px]">
-        <img src="/color-6.png" alt="color-6 button" />
-      </button>
+      <ColorButton backgroundColor="#ecdacc" textColor="#A992A6" imageSrc="/color-1.png" />
+      <ColorButton backgroundColor="#eee9e6" textColor="#A992A6" imageSrc="/color-2.png" />
+      <ColorButton backgroundColor="#ECF3EA" textColor="#A992A6" imageSrc="/color-3.png" />
+      <ColorButton backgroundColor="#e9efe8" textColor="#008d86" imageSrc="/color-4.png" />
+      <ColorButton backgroundColor="#098668" textColor="#ecdacc" imageSrc="/color-5.png" />
+      <ColorButton backgroundColor="#1C3C54" textColor="#C6CED4" imageSrc="/color-6.png" />
       <button id="apply-mask" className="w-[55px]">
         <img src="/Screen-mask-on.png" alt="Screen-mask-on button" />
       </button>
