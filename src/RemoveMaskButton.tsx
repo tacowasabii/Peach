@@ -1,3 +1,5 @@
+import React from 'react';
+
 const RemoveMaskButton= () => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

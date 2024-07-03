@@ -1,12 +1,16 @@
+import React from 'react';
+
 interface ColorButtonProps {
   backgroundColor: string;
   textColor: string;
   imageSrc: string;
 }
 
-const changeColors = (backgroundColor: string, textColor: string)=> {
+const changeColors = (backgroundColor: string, textColor: string) => {
   document.body.style.backgroundColor = backgroundColor;
-  const elements = document.getElementsByTagName('*') as HTMLCollectionOf<HTMLElement>;
+  const elements = document.getElementsByTagName(
+    '*',
+  ) as HTMLCollectionOf<HTMLElement>;
 
   for (let i = 0; i < elements.length; i++) {
     elements[i].style.color = textColor;
@@ -20,9 +24,13 @@ const changeColors = (backgroundColor: string, textColor: string)=> {
       elements[i].style.color = textColor;
     }
   }
-}
+};
 
-const ColorButton = ({ backgroundColor, textColor, imageSrc }:ColorButtonProps) => {
+const ColorButton = ({
+  backgroundColor,
+  textColor,
+  imageSrc,
+}: ColorButtonProps) => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       if (!tabs[0].url?.startsWith('http')) {
@@ -32,7 +40,7 @@ const ColorButton = ({ backgroundColor, textColor, imageSrc }:ColorButtonProps) 
       chrome.scripting.executeScript({
         target: { tabId: tabs[0].id as number },
         func: changeColors,
-        args: [backgroundColor, textColor]
+        args: [backgroundColor, textColor],
       });
     });
   };
@@ -43,7 +51,5 @@ const ColorButton = ({ backgroundColor, textColor, imageSrc }:ColorButtonProps) 
     </button>
   );
 };
-
-
 
 export default ColorButton;

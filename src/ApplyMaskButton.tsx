@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ApplyMaskButton = () => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -13,7 +15,7 @@ const ApplyMaskButton = () => {
   };
 
   const applyMask = () => {
-    var maskTop = document.createElement('div');
+    const maskTop = document.createElement('div');
     maskTop.id = 'mask-top';
     maskTop.style.position = 'fixed';
     maskTop.style.top = '0';
@@ -24,7 +26,7 @@ const ApplyMaskButton = () => {
     maskTop.style.zIndex = '9999';
     document.body.appendChild(maskTop);
 
-    var maskBottom = document.createElement('div');
+    const maskBottom = document.createElement('div');
     maskBottom.id = 'mask-bottom';
     maskBottom.style.position = 'fixed';
     maskBottom.style.bottom = '0';

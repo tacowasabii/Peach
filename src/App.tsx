@@ -1,21 +1,44 @@
-import ApplyMaskButton from "./ApplyMaskButton";
-import ColorButton from "./ColorButton";
-import RemoveMaskButton from "./RemoveMaskButton";
+import ApplyMaskButton from './ApplyMaskButton';
+import ChangeFontButton from './ChangeFontButton';
+import ColorButton from './ColorButton';
+import RemoveMaskButton from './RemoveMaskButton';
 
 function App() {
   return (
-    <div className="w-[760px] h-10">
-      <ColorButton backgroundColor="#ecdacc" textColor="#A992A6" imageSrc="/color-1.png" />
-      <ColorButton backgroundColor="#eee9e6" textColor="#A992A6" imageSrc="/color-2.png" />
-      <ColorButton backgroundColor="#ECF3EA" textColor="#A992A6" imageSrc="/color-3.png" />
-      <ColorButton backgroundColor="#e9efe8" textColor="#008d86" imageSrc="/color-4.png" />
-      <ColorButton backgroundColor="#098668" textColor="#ecdacc" imageSrc="/color-5.png" />
-      <ColorButton backgroundColor="#1C3C54" textColor="#C6CED4" imageSrc="/color-6.png" />
+    <div className="h-10 w-[760px]">
+      <ColorButton
+        backgroundColor="#ecdacc"
+        textColor="#A992A6"
+        imageSrc="/color-1.png"
+      />
+      <ColorButton
+        backgroundColor="#eee9e6"
+        textColor="#A992A6"
+        imageSrc="/color-2.png"
+      />
+      <ColorButton
+        backgroundColor="#ECF3EA"
+        textColor="#A992A6"
+        imageSrc="/color-3.png"
+      />
+      <ColorButton
+        backgroundColor="#e9efe8"
+        textColor="#008d86"
+        imageSrc="/color-4.png"
+      />
+      <ColorButton
+        backgroundColor="#098668"
+        textColor="#ecdacc"
+        imageSrc="/color-5.png"
+      />
+      <ColorButton
+        backgroundColor="#1C3C54"
+        textColor="#C6CED4"
+        imageSrc="/color-6.png"
+      />
       <ApplyMaskButton />
       <RemoveMaskButton />
-      <button id="change-font-button" className="w-[55px]">
-        <img src="/Change-font.png" alt="Change-font button" />
-      </button>
+      <ChangeFontButton />
       <button id="Font-size-up" className="w-[55px]">
         <img src="/Font-size-up.png" alt="Font-size-up button" />
       </button>
