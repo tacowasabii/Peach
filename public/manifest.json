@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "index.html", 
     "default_icon": {
       "16": "logo-white.png",
       "32": "logo-white.png",
@@ -13,7 +13,9 @@
       "128": "logo-white.png"
     }
   },
-
+ "background": {
+    "service_worker": "background.js"
+  },
   "icons": {
     "16": "logo-white.png",
     "32": "logo-white.png",
