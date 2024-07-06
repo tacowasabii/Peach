@@ -1,6 +1,8 @@
 import ApplyMaskButton from './ApplyMaskButton';
 import ChangeFontButton from './ChangeFontButton';
 import ColorButton from './ColorButton';
+import DecreaseFontSizeButton from './DecreaseFontSizeButton';
+import IncreaseFontSizeButton from './IncreaseFontSizeButton';
 import RemoveMaskButton from './RemoveMaskButton';
 
 function App() {
@@ -39,12 +41,8 @@ function App() {
       <ApplyMaskButton />
       <RemoveMaskButton />
       <ChangeFontButton />
-      <button id="Font-size-up" className="w-[55px]">
-        <img src="/Font-size-up.png" alt="Font-size-up button" />
-      </button>
-      <button id="Font-size-down" className="w-[55px]">
-        <img src="/Font-size-down.png" alt="Font-size-down button" />
-      </button>
+      <IncreaseFontSizeButton />
+      <DecreaseFontSizeButton />
       <button id="remove-reset" className="w-[55px]">
         <img src="/Deblurring_new.png" alt="Reset-button" />
       </button>
