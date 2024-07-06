@@ -1,7 +1,3 @@
-next.config.js
-/next.config.js
 node_modules
-postcss.config.js
 tailwind.config.ts
-svg.tsx
-
+/public
