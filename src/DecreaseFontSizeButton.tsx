@@ -1,6 +1,4 @@
-import React from 'react';
-
-const DecreaseFontSizeButton: React.FC = () => {
+const DecreaseFontSizeButton = () => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       const tabId = tabs[0].id;

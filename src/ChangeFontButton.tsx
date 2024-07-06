@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ChangeFontButton = () => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

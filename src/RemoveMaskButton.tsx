@@ -1,6 +1,4 @@
-import React from 'react';
-
-const RemoveMaskButton= () => {
+const RemoveMaskButton = () => {
   const handleClick = () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       if (!tabs[0].url?.startsWith('http')) {
