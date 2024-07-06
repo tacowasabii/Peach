@@ -3,7 +3,9 @@ import ChangeFontButton from './ChangeFontButton';
 import ColorButton from './ColorButton';
 import DecreaseFontSizeButton from './DecreaseFontSizeButton';
 import IncreaseFontSizeButton from './IncreaseFontSizeButton';
+import RemoveBlurButton from './RemoveBlurButton';
 import RemoveMaskButton from './RemoveMaskButton';
+import ResetButton from './ResetButton';
 
 function App() {
   return (
@@ -43,12 +45,8 @@ function App() {
       <ChangeFontButton />
       <IncreaseFontSizeButton />
       <DecreaseFontSizeButton />
-      <button id="remove-reset" className="w-[55px]">
-        <img src="/Deblurring_new.png" alt="Reset-button" />
-      </button>
-      <button id="reset" className="w-[55px]">
-        <img src="/Reset-button.png" alt="Reset-button" />
-      </button>
+      <RemoveBlurButton />
+      <ResetButton />
     </div>
   );
 }
